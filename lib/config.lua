@@ -8,16 +8,20 @@ mod_config = {
     debug_level = 3,
 
     all_evaporator_entity_names = {
-        "evaporator",
-        "advanced-evaporator"
+        "faucet-evaporator",
+        "faucet-advanced-evaporator"
     },
 
     evaporator_entity_names = {
-        "evaporator",
+        "faucet-evaporator",
     },
 
     advanced_evaporator_entity_names = {
-        "advanced-evaporator",
+        "faucet-advanced-evaporator",
+    },
+
+    microwave_evaporator_entity_names = {
+        "faucet-microwave-evaporator",
     },
 
     mod_settings = {

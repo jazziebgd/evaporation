@@ -1,0 +1,26 @@
+{
+    "entity": [
+        [
+            "evaporator",
+            "faucet-evaporator"
+        ],
+        [
+            "advanced-evaporator",
+            "faucet-advanced-evaporator"
+        ]
+    ],
+    "item": [
+        [
+            "evaporator",
+            "faucet-evaporator"
+        ],
+        [
+            "advanced-evaporator",
+            "faucet-advanced-evaporator"
+        ],
+        [
+            "microwave-evaporator",
+            "faucet-microwave-evaporator"
+        ]
+    ]
+}

@@ -1,5 +1,5 @@
 local microwave_evaporator = {
-    name = "microwave-evaporator",
+    name = "faucet-microwave-evaporator",
     type = "selection-tool",
     icon = mod_config.mod_root .. "/graphics/item/microwave-evaporator.png",
     icon_size = 256,

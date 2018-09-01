@@ -13,7 +13,7 @@ local evaporator_recipe = {
         {type="item", name="advanced-circuit", amount=100},
         {type="item", name="electric-engine-unit", amount=10},
     },
-    result = "advanced-evaporator",
+    result = "faucet-advanced-evaporator",
     order = "a-c",
 }
 

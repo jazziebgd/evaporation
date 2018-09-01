@@ -11,7 +11,7 @@ local evaporator_recipe = {
         {type="item", name="electronic-circuit", amount=10},
         {type="item", name="engine-unit", amount=10},
     },
-    result = "evaporator",
+    result = "faucet-evaporator",
     order = "a-b",
 }
 

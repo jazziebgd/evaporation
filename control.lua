@@ -237,7 +237,7 @@ function on_second()
 end
 
 function on_player_selected_area(e)
-    if e.item == "microwave-evaporator" then
+    if e.item == "faucet-microwave-evaporator" then
         local player = game.players[e.player_index]
         local area = e.area
         if is_zero_area(area) ~= true then

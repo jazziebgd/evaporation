@@ -1,9 +1,11 @@
+local graphics_root = mod_config.mod_root .. "/graphics/entity/advanced-evaporator/"
+
 local evaporator = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-2"])
 
-evaporator.name = "advanced-evaporator"
+evaporator.name = "faucet-advanced-evaporator"
 evaporator.icon = mod_config.mod_root .. "/graphics/icons/advanced-evaporator.png"
 evaporator.icon_size = 128
-evaporator.minable.result = "advanced-evaporator"
+evaporator.minable.result = "faucet-advanced-evaporator"
 
 evaporator.selection_box = {
     {
@@ -33,29 +35,42 @@ evaporator.crafting_categories = {
 
 evaporator.crafting_speed = 0.5
 
+local sprite_size = 128
+local sprite_scale = 1
+local hr_sprite_size = 256
+local hr_sprite_scale = 0.5
+
+local filename_base = graphics_root .. "advanced-evaporator"
+local hr_filename_base = graphics_root .. "hr-advanced-evaporator"
+
+local frame_count = 64
+local line_length = 8
+local animation_speed = 1.6
+
 evaporator.animation = {
     layers = {
         {
-            width = 128,
-            height = 128,
-            filename = mod_config.mod_root .. "/graphics/entity/advanced-evaporator/advanced-evaporator.png",
-            frame_count = 64,
-            line_length = 8,
-            animation_speed = 1.6,
+            width = sprite_size,
+            height = sprite_size,
+            scale = sprite_scale,
+            filename = filename_base .. ".png",
+            frame_count = frame_count,
+            line_length = line_length,
+            animation_speed = animation_speed,
             priority = "high",
             shift = {
                 0,
                 0
             },
             hr_version = {
-                width = 256,
-                height = 256,
-                filename = mod_config.mod_root .. "/graphics/entity/advanced-evaporator/hr-advanced-evaporator.png",
-                frame_count = 64,
-                line_length = 8,
-                animation_speed = 1.6,
+                width = hr_sprite_size,
+                height = hr_sprite_size,
+                filename = hr_filename_base .. ".png",
+                frame_count = frame_count,
+                line_length = line_length,
+                animation_speed = animation_speed,
                 priority = "high",
-                scale = 0.5,
+                scale = hr_sprite_scale,
                 shift = {
                     0,
                     0
@@ -64,12 +79,13 @@ evaporator.animation = {
         },
         {
             draw_as_shadow = true,
-            width = 128,
-            height = 128,
-            filename = mod_config.mod_root .. "/graphics/entity/advanced-evaporator/advanced-evaporator-shadow.png",
-            frame_count = 64,
-            line_length = 8,
-            animation_speed = 1.6,
+            width = sprite_size,
+            height = sprite_size,
+            scale = sprite_scale,
+            filename = filename_base .. "-shadow.png",
+            frame_count = frame_count,
+            line_length = line_length,
+            animation_speed = animation_speed,
             priority = "high",
             shift = {
                 0,
@@ -77,14 +93,14 @@ evaporator.animation = {
             },
             hr_version = {
                 draw_as_shadow = true,
-                width = 256,
-                height = 256,
-                filename = mod_config.mod_root .. "/graphics/entity/advanced-evaporator/hr-advanced-evaporator-shadow.png",
-                frame_count = 64,
-                line_length = 8,
-                animation_speed = 1.6,
+                width = hr_sprite_size,
+                height = hr_sprite_size,
+                filename = hr_filename_base .. "-shadow.png",
+                frame_count = frame_count,
+                line_length = line_length,
+                animation_speed = animation_speed,
                 priority = "high",
-                scale = 0.5,
+                scale = hr_sprite_scale,
                 shift = {
                     0,
                     0
@@ -101,26 +117,27 @@ evaporator.working_visualisations = {
         south_position = {0.0, 0.0},
         west_position = {0.0, 0.0},
         animation = {
-            width = 128,
-            height = 128,
-            filename = mod_config.mod_root .. "/graphics/entity/advanced-evaporator/advanced-evaporator-working.png",
-            frame_count = 64,
-            line_length = 8,
-            animation_speed = 1.6,
+            width = sprite_size,
+            height = sprite_size,
+            scale = sprite_scale,
+            filename = filename_base .. "-working.png",
+            frame_count = frame_count,
+            line_length = line_length,
+            animation_speed = animation_speed,
             priority = "high",
             shift = {
                 0,
                 0
             },
             hr_version = {
-                width = 256,
-                height = 256,
-                filename = mod_config.mod_root .. "/graphics/entity/advanced-evaporator/hr-advanced-evaporator-working.png",
-                frame_count = 64,
-                line_length = 8,
-                animation_speed = 1.6,
+                width = hr_sprite_size,
+                height = hr_sprite_size,
+                filename = hr_filename_base .. "-working.png",
+                frame_count = frame_count,
+                line_length = line_length,
+                animation_speed = animation_speed,
                 priority = "high",
-                scale = 0.5,
+                scale = hr_sprite_scale,
                 shift = {
                     0,
                     0

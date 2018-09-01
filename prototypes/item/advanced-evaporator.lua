@@ -1,5 +1,5 @@
 local evaporator = {
-    name = "advanced-evaporator",
+    name = "faucet-advanced-evaporator",
     type = "item",
     icon = mod_config.mod_root .. "/graphics/icons/advanced-evaporator.png",
     icon_size = 256,
@@ -7,7 +7,7 @@ local evaporator = {
         "goes-to-quickbar"
     },
     order = "b-b",
-    place_result = "advanced-evaporator",
+    place_result = "faucet-advanced-evaporator",
     stack_size = 50,
     subgroup = "evaporation-evaporators",
 }

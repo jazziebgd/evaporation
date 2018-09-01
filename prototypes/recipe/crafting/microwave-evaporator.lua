@@ -15,7 +15,7 @@ local microwave_evaporator_recipe = {
     },
     results=
     {
-        {type="item", name="microwave-evaporator", amount=1},
+        {type="item", name="faucet-microwave-evaporator", amount=1},
     },
 }
 data:extend{microwave_evaporator_recipe}
